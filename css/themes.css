@@ -1,0 +1,20 @@
+.dark{
+  --bg: radial-gradient(circle,#0b0f14,#000);
+  --card-bg: rgba(255,255,255,0.1);
+  --text: #ffffff;
+  --accent: #00e5ff;
+}
+
+.cyber{
+  --bg: linear-gradient(135deg,#022,#044);
+  --card-bg: rgba(0,0,0,0.45);
+  --text: #eaffff;
+  --accent: #00ffd5;
+}
+
+.neon{
+  --bg: linear-gradient(135deg,#2b0030,#001f3f);
+  --card-bg: rgba(255,255,255,0.18);
+  --text: #ffffff;   /* 🔑 FORCE WHITE TEXT */
+  --accent: #ff3cff;
+}

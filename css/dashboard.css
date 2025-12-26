@@ -1,0 +1,76 @@
+.topbar {
+  max-width: 1100px;
+  margin: 40px auto 20px;
+  padding: 0 20px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.welcome {
+  font-size: 26px;
+  font-weight: 600;
+  flex: 1;
+}
+
+#themeSelect {
+  min-width: 200px;
+  background: var(--card-bg);
+  color: var(--text);
+}
+
+.dashboard {
+  max-width: 1100px;
+  margin: 30px auto;
+  padding: 0 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 30px;
+}
+
+/* Cards */
+.card3d {
+  background: var(--card-bg);
+  backdrop-filter: blur(16px);
+  border-radius: 20px;
+  padding: 25px;
+  min-height: 180px;
+  box-shadow: 0 20px 50px rgba(0,0,0,0.5);
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  animation: fadeUp 0.8s ease forwards;
+}
+
+.card3d:hover {
+  transform: translateY(-10px) scale(1.02);
+  box-shadow: var(--glow);
+}
+
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(30px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Profile */
+.profile {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+
+.avatar {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, var(--accent), #ffffff);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 28px;
+  font-weight: bold;
+  color: #000;
+  box-shadow: var(--glow);
+}
+.auth-card:hover,
+.card3d:hover {
+  box-shadow: 0 0 40px var(--accent);
+}

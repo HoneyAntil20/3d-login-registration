@@ -1,0 +1,8 @@
+.parallax {
+  position: fixed;
+  inset: -10%;
+  background: radial-gradient(circle at top, #0c1117, #05070a);
+  transform: translateZ(0);
+  will-change: transform;
+  z-index: -3;
+}

@@ -1,0 +1,26 @@
+#particles {
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  overflow: hidden;
+}
+
+.particle {
+  position: absolute;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--accent);
+  opacity: 0.25;
+  animation: float 20s linear infinite;
+}
+
+@keyframes float {
+  from { transform: translateY(100vh); }
+  to   { transform: translateY(-10vh); }
+}
+#particleCanvas{
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+}
